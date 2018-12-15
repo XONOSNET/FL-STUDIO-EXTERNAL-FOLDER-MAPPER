@@ -1,6 +1,6 @@
 <h2 style="text-align:center;width:100%;">FL STUDIO EXTERNAL <div style="font-size:11pt!important;color:rgba(0,0,0,0.25)!important;">FOLDER MAPPER</div></h2>
 <hr></hr>
-<p style="display:block;width:100%;text-align:center;"><img src="https://i.imgur.com/lWHLgrl.png"/></p>
+<p style="display:block;width:100%;text-align:center;"><img style="padding-left:15%;" src="https://i.imgur.com/lWHLgrl.png"/></p>
 <hr></hr>
 <p style="padding-left:10px;"><strong>What does it do?</strong></p>
 <p style="padding-left:25px;">This script provides an easy method to creating remote folders
