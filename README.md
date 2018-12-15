@@ -1,4 +1,4 @@
-<h2 style="text-align:center;width:100%;">FL STUDIO EXTERNAL <small style="font-size:15pt!important;color:rgba(0,0,0,0.25)!important;">FOLDER MAPPER</small></h2>
+<h2 style="text-align:center;width:100%;">FL STUDIO EXTERNAL <div style="font-size:15pt!important;color:rgba(0,0,0,0.25)!important;">FOLDER MAPPER</div></h2>
 <hr></hr>
 <p style="display:block;width:100%;text-align:center;"><img src="https://i.imgur.com/lWHLgrl.png"/></p>
 <hr></hr>
