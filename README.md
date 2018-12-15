@@ -1,7 +1,8 @@
-<h2 style="text-align:center;width:100%;">FL STUDIO EXTERNAL FOLDER MAPPER</h2>
+<h2 style="text-align:center;width:100%;">FL STUDIO EXTERNAL <small>FOLDER MAPPER</small></h2>
+<hr></hr>
 <p style="display:block;width:100%;text-align:center;"><img src="https://i.imgur.com/lWHLgrl.png"/></p>
-
-<p style="padding-left:10px;"><strong>What does it do?</strong>
+<hr></hr>
+<p style="padding-left:10px;"><strong>What does it do?</strong></p>
 <p style="padding-left:25px;">This script provides an easy method to creating remote folders
 in your patch/sample library. For instance, you could place all
 of your midis, samples, loops, etc., in a dropbox directory and
