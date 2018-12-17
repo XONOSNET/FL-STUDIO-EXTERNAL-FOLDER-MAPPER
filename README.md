@@ -2,7 +2,7 @@
 <hr></hr>
 <p style="display:block!important;width:100%!important;text-align:center!important;"><img src="https://i.imgur.com/lWHLgrl.png"/></p>
 <hr></hr>
-
+<p>* Note: This script is only for Windows systems. Sorry Mac users!</p>
 <p style="padding-left:10px;"><strong>What does it do?</strong></p>
 <p style="padding-left:25px;">This script provides an easy method to creating remote folders
 in your patch/sample library. For instance, you could place all
