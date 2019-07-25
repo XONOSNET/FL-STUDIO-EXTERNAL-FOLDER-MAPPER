@@ -45,7 +45,7 @@ ECHO %_tmp_br%^| [ Obtaining FL Studio Path from Registry ]
 :: @Note: Get path to FL.exe
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 FOR /F "usebackq tokens=3*" %%A IN (`REG QUERY "HKEY_CURRENT_USER\Software\Image-Line\Shared\Paths" /v "FL Studio"`) DO (SET _FL_EXE_PATH=%%B)
-SET _FL_DATA_PATH=%_FL_EXE_PATH:FL.exe=Data\Patches\test\%
+SET _FL_DATA_PATH=%_FL_EXE_PATH:FL.exe=Data\Patches\%
 
 
 
@@ -209,21 +209,19 @@ IF NOT EXIST "%_FL_EXE_PATH%" (GOTO :FL_NOTFOUND) ELSE GOTO :CONFIRM_FL_INSTALL
 	SET _FL_DATA_PATH=%_FL_DATA_PATH%%_tmp_cust_fldr%\
 	ECHO ^ ^ ^ ^ ^ ^ ^ ^*^*^ %_FL_DATA_PATH%
 	GOTO :CUSTOM_FOLDER_SELECTED
-	
+
+::When no custom folder is entered.
 :ROOT_FOLDER_SELECTED
 	ECHO %_tmp_xbr%^:^ No custom folder structure was specified. Defaulting root directory.
 	ECHO %_tmp_xbr%^:^ ^[%_FL_DATA_PATH%^] has been selected. 
 	GOTO :FL_FOUND
 	
+::When a custom path is entered.
 :CUSTOM_FOLDER_SELECTED
-	SET _FL_DATA_PATH=%_FL_DATA_PATH%%_tmp_cust_fldr%\
 	ECHO %_tmp_br%^: 
 	ECHO %_tmp_br%^: 
 	ECHO %_tmp_xbr%^:^ ^[%_FL_DATA_PATH%^] has been selected. 
 	GOTO :FL_FOUND
-	::IF %ERRORLEVEL%==1 GOTO :MAKE_DATA_FOLDER_STRUCTURE
-	::IF %ERRORLEVEL%==2 GOTO :CLOSE_OUT
-	::GOTO :CLOSE_OUT
 
 ::Function: Creates the folder structure necessary for this script to work.
 :MAKE_DATA_FOLDER_STRUCTURE
@@ -282,8 +280,3 @@ IF NOT EXIST "%_FL_EXE_PATH%" (GOTO :FL_NOTFOUND) ELSE GOTO :CONFIRM_FL_INSTALL
 
 :CLOSE_OUT
 	EXIT
-
-
-
-
-
